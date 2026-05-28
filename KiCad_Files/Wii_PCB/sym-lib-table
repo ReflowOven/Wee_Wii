@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Wii_symbols")(type "KiCad")(uri "D:/Downloads/New Wii Pcb/Wii_symbols.kicad_sym")(options "")(descr ""))
+)
