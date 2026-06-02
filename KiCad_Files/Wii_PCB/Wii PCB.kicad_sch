@@ -5,7 +5,10 @@
 	(uuid "07becb85-5b32-497c-802d-66c73e9db46a")
 	(paper "A4")
 	(title_block
-		(date "2026-05-26")
+		(date "2026-06-01")
+		(rev "1.01")
+		(comment 1 "Fixed C160 4.7uF -> 100nF")
+		(comment 2 "Grounded Ram ZQ PAD")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"

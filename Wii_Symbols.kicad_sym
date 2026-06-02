@@ -10518,7 +10518,7 @@
 			(pin input line
 				(at -13.97 -105.41 0)
 				(length 5.08)
-				(name "SEN_NC"
+				(name "SEN_GND"
 					(effects
 						(font
 							(size 1.27 1.27)
