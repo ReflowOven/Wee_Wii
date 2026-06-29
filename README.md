@@ -16,9 +16,12 @@ The Wee Wii PCB is designed around the Hollywood-1 and Broadway-1 chips. Any 4 l
 
 ---
 
-<img width="1200"  alt="Schematic Snapshot" src="https://github.com/user-attachments/assets/f325a9f4-7a1b-4692-9795-54ff3d7bf02f" />
+<img height="500" alt="Example Page1" src="https://github.com/user-attachments/assets/c04b5fe3-61f1-4dbd-ae62-461faa6031e2" />
 
-*Small section of the schematic above, split into multiple sheets for readability*
+<img height="600" alt="Example Page2" src="https://github.com/user-attachments/assets/4ea2d846-7b20-4585-9e50-6c2425667c86" />
+
+
+*Short preview of the schematic above, the full schematic is split into multiple sheets for readability*
 
 
 ## Notes
@@ -27,9 +30,16 @@ This board requires chips harvested from a Nintendo Wii. This is a high-risk pro
 
 It is highly recommended to install Aurelio92's [RVLoader](https://github.com/Aurelio92/RVLoader) before harvesting the components, as this enables booting the custom board without the WiFi and Bluetooth daughterboards.
 
-Some mistakes may be present in the current BOM. A working board was nearly fully populated using passives harvested from a working Wii.
+**The PCBA revision has now been fully tested. Functionality and BOM is now up to date.**
 
-**The current revision has not yet been assembled and tested. Functionality is validated on the previous bodged board.**
+<img height="600" alt="PCBA_WII_TOP" src="https://github.com/user-attachments/assets/5977ba31-5215-45df-8a70-582d588d69a9" />
+<img height="600" alt="PCBA_WII_BOT" src="https://github.com/user-attachments/assets/1f1b23d4-04dc-4f22-8ae7-bbdb4136febf" />
+
+*preview of the newest assembled boards with PCBA / new components, Fully working*
+
+---
+
+**First fully assembled board, formerly required bodges because of small errors**
 
 <img height="400" alt="Wii Rear Bodges" src="https://github.com/user-attachments/assets/a47d31a1-8bef-4523-9797-472bbdb1e62a" />
 <img height="400" alt="BGA Bodges" src="https://github.com/user-attachments/assets/95209819-7cee-4909-b254-de5e24f3f346" />
@@ -41,11 +51,8 @@ Some mistakes may be present in the current BOM. A working board was nearly full
 BGA nets were iteratively revised for clarity and accuracy during development. The schematic and board is believed to be correct, but errors may still be present. If you spot any mistakes, please open an issue.
 
 
-The following have not been verified:
-- MX RTC functionality
-- SD card pad functionality
 
-I have not verified the polarity for the Bluetooth daughterboard. The interface is USB, but the community convention refers to them as Data 1 and Data 2. Assume BT and BT~ as labeled on the schematic are Data 1 and Data 2 respectively.
+The bluetooth via nets have been changed in the schematic as of Jun 2026, if you are referencing the BitBuilt community's relocation guide, Data 1 -> BT~ and Data 2 -> BT, the old net was technically reversed since the bluetooth vias are actually USB.
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/ef8f5b0f-49f0-4fc3-a949-789567c96b5e" />
 
@@ -68,7 +75,7 @@ Image courtesy of BitBuilt [The Definitive Wii Trimming Guide](https://bitbuilt.
 ## Applications
 
 - Acts as a reference and starting point for designing a custom portable Wii.
-- Reclaim working chips from dead boards, enabling failed portable consoles to have a second life, or reviving consoles that have failures
+- Reclaim working chips from dead boards, enabling failed portable consoles to have a second life, or reviving consoles that have general failures
 
 
 ## Harvesting
@@ -93,7 +100,7 @@ In this image, JLC's BOM parser detects a 70 ohm resistor as 4.7k.
 ---
 
 It's also worth noting that the Wii BOM uses quite a few components that are considered non standard, and manufacturers will charge more to populate these components, it's worth considering to only have some of these passives populated, like the standard decoupling capacitors behind the gpu and cpu.
-
+Some of the components that nintendo populated related to the RAM BOM do function within a few percentage points, it is functional to use the nearest common resistor value for some of the ram resistor networks, such as 68R.
 
 ## License
 

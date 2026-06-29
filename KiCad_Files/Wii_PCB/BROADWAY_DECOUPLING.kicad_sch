@@ -371,10 +371,12 @@
 			(embedded_fonts no)
 		)
 	)
-	(bus_alias "DDR_CMD"
-		(members "CS#" "RES" "SEN" "WDQS2" "RDQS2" "RDQS3" "WDQS3" "DM2" "CK" "CK#"
-			"BA2" "WE#" "CKE" "RAS#" "BA1" "BA0" "CAS#" "DM1" "DM0" "WDQS1" "RDQS1"
-			"RDQS0" "WDQS0" "ZQ" "DM3"
+	(bus_alias "RAM_CMD"
+		(members "RAM_CS0#" "RAM_RES" "RAM_SEN" "RAM_WDQS2" "RAM_RDQS2" "RAM_RDQS3"
+			"RAM_WDQS3" "RAM_DM2" "RAM_CK0" "RAM_CK0#" "RAM_BA2" "RAM_WE#" "RAM_CKE"
+			"RAM_RAS#" "RAM_BA1" "RAM_BA0" "RAM_CAS#" "RAM_DM1" "RAM_DM0" "RAM_WDQS1"
+			"RAM_RDQS1" "RAM_RDQS0" "RAM_WDQS0" "RAM_ZQ" "RAM_DM3" "RAM_CK1" "RAM_CK1#"
+			"RAM_CS1#"
 		)
 	)
 	(text "CPU\nFILTERING"

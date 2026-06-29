@@ -5058,7 +5058,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4763b6f9-4b3e-48d4-bc2b-1732084d0aa9")
-		(property "Reference" "U1"
+		(property "Reference" "AVE1"
 			(at 146.05 91.3698 0)
 			(effects
 				(font
@@ -5299,7 +5299,7 @@
 		(instances
 			(project "Wii PCB"
 				(path "/07becb85-5b32-497c-802d-66c73e9db46a/d79f3b7d-4197-4e02-ad8d-484cbd5334e4"
-					(reference "U1")
+					(reference "AVE1")
 					(unit 1)
 				)
 			)

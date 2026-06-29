@@ -8247,7 +8247,7 @@
 				)
 			)
 		)
-		(property "Footprint" "wii_bgaLibrary:Updated BROADWAY"
+		(property "Footprint" "WeeWii_Library:Updated BROADWAY"
 			(at 140.97 6.35 0)
 			(effects
 				(font

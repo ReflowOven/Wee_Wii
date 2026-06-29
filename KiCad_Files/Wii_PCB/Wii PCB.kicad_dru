@@ -1,0 +1,8 @@
+(version 1)
+(rule "RAM COUPLING"
+    (condition "A.NetClass == 'RAM_*' && B.NetClass == 'RAM_*'")
+    (constraint clearance (min 0.10mm)))
+
+(rule "GPU COUPLING"
+    (condition "A.NetClass == 'GPU_*' && B.NetClass == 'GPU_*'")
+    (constraint clearance (min 0.10mm)))

@@ -643,7 +643,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 170.18) (xy 99.06 170.18)
+			(xy 88.9 170.18) (xy 99.06 170.18)
 		)
 		(stroke
 			(width 0)
@@ -823,6 +823,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 166.37) (xy 92.71 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "608a8fae-5eb3-41fb-ab40-31c2e3b53e89")
+	)
+	(wire
+		(pts
 			(xy 138.43 105.41) (xy 148.59 105.41)
 		)
 		(stroke
@@ -923,7 +933,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 157.48) (xy 92.71 170.18)
+			(xy 92.71 157.48) (xy 92.71 166.37)
 		)
 		(stroke
 			(width 0)
@@ -940,6 +950,16 @@
 			(type default)
 		)
 		(uuid "9ab4f8f2-9502-44a1-8bb4-ea42331be05c")
+	)
+	(wire
+		(pts
+			(xy 88.9 170.18) (xy 88.9 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f94172d-5ae6-4e3e-86e4-4eccac94b363")
 	)
 	(wire
 		(pts
@@ -1211,8 +1231,8 @@
 		)
 		(uuid "fbb6ea19-4273-4182-a298-720423bdf3f5")
 	)
-	(label "CK"
-		(at 96.52 170.18 180)
+	(label "RAM_CK0"
+		(at 99.06 170.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1221,7 +1241,7 @@
 		)
 		(uuid "1a9503f8-aeaa-4f2d-854c-499a3d0af43a")
 	)
-	(label "CK#"
+	(label "RAM_CK0#"
 		(at 97.79 172.72 180)
 		(effects
 			(font
@@ -1231,7 +1251,7 @@
 		)
 		(uuid "92e274a1-defe-4421-8d6f-0164695038cd")
 	)
-	(global_label "{DDR_CMD}"
+	(global_label "{RAM_CMD}"
 		(shape input)
 		(at 105.41 171.45 0)
 		(fields_autoplaced yes)
@@ -2176,9 +2196,9 @@
 		(at 95.25 62.23 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "5afe693b-228b-4700-8443-e1b28032ba20")
 		(property "Reference" "C200"

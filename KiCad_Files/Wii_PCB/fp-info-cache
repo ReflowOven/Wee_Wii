@@ -1,4 +1,4 @@
-26786819910960877
+26790446833559015
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106386,12 +106386,12 @@ SMD SMT crystal
 2
 2
 WeeWii_Library
-GDDR3
-Gddr3
-BGA 136 0.8 
+MICROSD_MSD-4-A
+
+
 0
-136
-136
+13
+13
 WeeWii_Library
 MX_SOIC
 SOIC, 28 Pin (JEDEC MS-013AE, https://www.analog.com/media/en/package-pcb-resources/package/35833120341221rw_28.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
@@ -106400,7 +106400,7 @@ SOIC SO
 28
 28
 WeeWii_Library
-Molex_SlimStack_52991-0208_2x10_P0.50mm_Vertical
+Molex_SlimStack_Wifi
 Molex SlimStack Fine-Pitch SMT Board-to-Board Connectors, 52991-0208, 20 Pins (http://www.molex.com/pdm_docs/sd/529910308_sd.pdf), generated with kicad-footprint-generator
 connector Molex SlimStack vertical
 0
@@ -106413,6 +106413,13 @@ BGA 289 0.8
 0
 289
 289
+WeeWii_Library
+Updated GDDR3
+Gddr3 Corrected Orientation
+BGA 136 0.8 
+0
+136
+136
 WeeWii_Library
 Updated HOLLYWOOD
 Hollywood Corrected Orientation
@@ -106427,6 +106434,13 @@ SOT TO_SOT_SMD
 0
 5
 5
+Wii-U_Library
+SOC
+Classic Wii-U SOC package, 40x40mm
+
+0
+1517
+1517
 xbox_footprints
 MCPX X3
 

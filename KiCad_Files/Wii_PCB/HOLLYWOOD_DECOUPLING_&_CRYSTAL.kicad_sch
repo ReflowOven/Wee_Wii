@@ -373,7 +373,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "XTAL"
 				(at 0 0 0)
 				(effects
 					(font
@@ -381,8 +381,8 @@
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "27Mhz 20pF"
+				(at 0 -3.048 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -408,6 +408,15 @@
 				)
 			)
 			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "CRYSTAL 27MHz 20pF SMD Footprint: SMD3225-4P"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1056,16 +1065,6 @@
 		)
 		(uuid "54258d90-a1d7-46e0-be39-d7b09c4b18cf")
 	)
-	(wire
-		(pts
-			(xy 86.36 55.88) (xy 87.63 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "667e508a-20bf-4f94-ab4f-8dc4290a2e9e")
-	)
 	(polyline
 		(pts
 			(xy 88.9 54.61) (xy 88.9 39.37)
@@ -1115,16 +1114,6 @@
 			(type default)
 		)
 		(uuid "7e37d881-2985-4e7b-8ddb-7cbc3fd0ba35")
-	)
-	(wire
-		(pts
-			(xy 95.25 55.88) (xy 96.52 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f1bc231-91d6-4c06-a814-fa468c76ff10")
 	)
 	(wire
 		(pts
@@ -1215,16 +1204,6 @@
 			(type default)
 		)
 		(uuid "8c87442f-1c8a-4c4c-a57c-41111fb04142")
-	)
-	(wire
-		(pts
-			(xy 120.65 69.85) (xy 125.73 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a395654d-960f-4510-90cd-5b2d59dd7f49")
 	)
 	(polyline
 		(pts
@@ -1457,27 +1436,6 @@
 			)
 		)
 	)
-	(global_label "SDA"
-		(shape input)
-		(at 86.36 55.88 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "78a5e16b-9d27-4ab9-bffd-ad6f9df06955")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.8067 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "XTALOUT"
 		(shape input)
 		(at 127 151.13 0)
@@ -1491,27 +1449,6 @@
 		(uuid "b6404e19-4135-4bfa-9ce6-fdaa8939b10f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 133.5449 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "fb2_net"
-		(shape input)
-		(at 125.73 69.85 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left)
-		)
-		(uuid "d921fc34-d7bd-4061-a140-912d9c531b00")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 131.7304 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3759,72 +3696,6 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 96.52 55.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "378a00e7-9d9e-4921-8aac-528c4c28a2b4")
-		(property "Reference" "#PWR0740"
-			(at 92.71 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "1.8V"
-			(at 96.774 54.356 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 96.52 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 96.52 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9d6d4d3b-effa-4cad-a25f-136789a80cb5")
-		)
-		(instances
-			(project "Wii PCB"
-				(path "/07becb85-5b32-497c-802d-66c73e9db46a/a16de3f9-3a8b-4f3b-9109-039936b1b0ef"
-					(reference "#PWR0740")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
 		(at 106.68 50.8 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4965,74 +4836,6 @@
 			(project "Wii PCB"
 				(path "/07becb85-5b32-497c-802d-66c73e9db46a/a16de3f9-3a8b-4f3b-9109-039936b1b0ef"
 					(reference "#PWR0795")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 91.44 55.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4bb82dec-7975-48e8-875b-cec5c74024b3")
-		(property "Reference" "R21"
-			(at 91.44 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 91.44 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 91.44 57.658 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 91.44 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cf12e767-96ba-47d5-83b4-adc280ae45c1")
-		)
-		(pin "2"
-			(uuid "82d753f1-6c33-4e09-bfc3-875a90e1cc72")
-		)
-		(instances
-			(project "Wii PCB"
-				(path "/07becb85-5b32-497c-802d-66c73e9db46a/a16de3f9-3a8b-4f3b-9109-039936b1b0ef"
-					(reference "R21")
 					(unit 1)
 				)
 			)
